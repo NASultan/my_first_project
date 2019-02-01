@@ -7,7 +7,8 @@ def main(request):
  			return render(request, 'blog/ТОО НТК Sfera-S.html', {})
 def news(request):
 	posts =	Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/новости.html', {'posts': posts})
+	return render(request, 'blog/новости.html', {'posts': posts})
+	
 def clean(request):
  			return render(request, 'blog/чистка.html', {})
 def services(request):

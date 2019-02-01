@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ТОО НТК Sfera-S</title>
+		<meta charset="utf-8">
+
+		<!-- Для обеспечения правильной визуализации и осязание масштабирования для всех устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- чтобы загрузить наш CSS от Bootscrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+		<link rel="icon" href="images/ss.png">
+        <link rel="stylesheet" href="{% static 'css/восстановление.css' %}">
+		<style>
+			body{
+				background-color: #444444;
+				/*box-sizing: border-box;*/
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Шапка сайта -->
+		<div class="container">
+			<div class="row">
+				<div class="col-1">
+					<img src="images/ss.png" width="45" height="45" alt="Navbar">
+				</div>
+				<div class="col-3">
+					<a class="navbar-brand" href="main">
+						<h1 style="font-size:180%;">ТОО НТК Sfera-S</h1>
+  					</a>
+				</div>
+				<div class="col-4">
+					<div class="contackt">
+						<a href="#"> + 7 (727) 35-73-513</a><br>
+						<a href="#">+ 7 (707) 729-28-26 (WhatsApp)</a><br>
+						<a href="mailto:info@ss.kz">info@ss.kz</a>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="search">
+	  					<form class="form-inline">
+			    			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			    			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+	  					</form>
+  					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Меню сайта -->
+		<ul id="menu">
+			<li><a href="main"><h5>Главная</h5></a></li>
+			<li><a href="services"><h5>Наши услуги</h5></a>
+				<ul class="sub-menu">
+					<li><a href="outsourcing">IT аутсорсинг</a></li>
+					<li><a href="repairs_laptop">Ремонт ноутбуков</a></li>
+					<li><a href="repairs">Ремонт компьютеров</a></li>
+					<li><a href="recovery">Восстановление информации</a></li>
+					<li><a href="clean">Чистка</a></li>
+					<li><a href="assembly">Сборка</a></li>
+				</ul>
+			</li>
+			<li><a href="price"><h5>Прайст-лист</h5></a></li>
+			<li><a href="news"><h5>Новости</h5></a></li>
+			<li><a href="contacts"><h5>Контакты</h5></a></li>
+		</ul>
+
+		
+
+	<div class="main">
+
+		<!-- Прайст-лист -->
+		<div class="zap">
+			
+		</div>	
+
+		<!-- Оставьте заявку сейчас и получите 10% скидку -->
+		<div class="oz" align="center">
+			<h2>Оставьте заявку сейчас и получите 10% скидку</h2>
+		</div>
+		<div id="container">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-4" id="three">
+					<label>Имя: <span style="font-weight:bold; color:#FF0000">*</span></label><br>
+					<input name="name" type="text" size="40" class="text"/>
+				</div>
+				<div class="col-4" id="four">
+					<label>Телефон: <span style="font-weight:bold; color:#FF0000">*</span></label><br>
+					<input name="Phone" type="" size="40" class="number"/>
+				</div>
+				<div class="col-2" id="five">
+					<br><button type="button" onclick="alert('Спасибо! Мы обязательно ответим вам.')">Отправить</button>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Footer -->
+		<footer class="page-footer font-small mdb-color darken-3 pt-4" id="footer">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-6">
+						<div class="embed-responsive embed-responsive-16by9 mb-4">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-copyright text-center py-3" id="footer-down" style="color: white;">2019 &copy Все права защищены. 
+			<a href="#"> nursultan_ak@mail.ru</a>
+		</div>
+		</footer>
+
+	</div>
+
+		<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	</body>
+</html>

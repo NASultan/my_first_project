@@ -7,12 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<link rel="icon" href="images/ss.png">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<style>
 			body{
 				background-color: #444444;
@@ -22,34 +21,19 @@
 	</head>
 	<body>
 		<!-- Шапка сайта -->
-		<div class="container">
-			<div class="row">
-				<div class="col-1">
-					<img src="{% static 'images/ss.png' %}" width="45" height="45" alt="Navbar">
-				</div>
-				<div class="col-3">
-					<a class="navbar-brand" href="main">
-						<h1 style="font-size:180%;">ТОО НТК Sfera-S</h1>
-  					</a>
-				</div>
-				<div class="col-4">
-					<div class="contackt">
-						<a href="#"> + 7 (727) 35-73-513</a><br>
-						<a href="#">+ 7 (707) 729-28-26 (WhatsApp)</a><br>
-						<a href="mailto:info@ss.kz">info@ss.kz</a>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="search">
-	  					<form class="form-inline">
-			    			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			    			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
-	  					</form>
-  					</div>
-				</div>
-			</div>
-		</div>
-
+		<nav class="navbar navbar-light justify-content-between">
+			<a class="navbar-brand" style="font-size: 25pt; color: #00AF3F;" href="main">
+				<img src="images/ss.png" width="55" height="55" class="d-inline-block align-top" alt="Navbar">
+				ТОО НТК Sfera-S
+			</a>
+		    <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: #00AF3F;"></a>
+        	<a href="https://www.instagram.com"><i class="fa fa-instagram" style="color: #00AF3F;"></i></a>
+		 	<a href="https://www.vk.com"><i class="fa fa-vk" style="color: #00AF3F;"></i></a>
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
 		
 		<!-- Меню сайта -->
 		<ul id="menu">
@@ -96,27 +80,6 @@
 
 
 	<div class="main">
-		<!-- Оставьте заявку сейчас и получите 10% скидку -->
-		<div class="oz" align="center">
-			<h2>Оставьте заявку сейчас и получите 10% скидку</h2>
-		</div>
-		<div id="container">
-			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-4" id="three">
-					<label>Имя: <span style="font-weight:bold; color:#FF0000">*</span></label><br>
-					<input name="name" type="text" size="40" class="text"/>
-				</div>
-				<div class="col-4" id="four">
-					<label>Телефон: <span style="font-weight:bold; color:#FF0000">*</span></label><br>
-					<input name="Phone" type="" size="40" class="number"/>
-				</div>
-				<div class="col-2" id="five">
-					<br><button type="button" onclick="alert('Спасибо! Мы обязательно ответим вам.')">Отправить</button>
-				</div>
-			</div>
-		</div>
-
 		<div class="news">
 			<div id="news-left">
 			    <img src="{% static "images/BBN_3989.jpg" %}" alt="My image">
@@ -165,6 +128,13 @@
 			</div>
 		</div>
 
+		<!-- Оставьте заявку сейчас и получите 10% скидку -->
+		<div class="oz" align="center">
+			<h2>Оставьте заявку сейчас и получите 10% скидку</h2>
+			<input name="name" type="text" size="32" class="text" placeholder="Имя"/>
+			<input name="Phone" type="" class="number" placeholder="Телефон" />
+			<button type="button" onclick="alert('Спасибо! Мы обязательно ответим вам.')">Отправить</button>
+		</div>
 		
 		<!-- Footer -->
 		<footer class="page-footer font-small mdb-color darken-3 pt-4" id="footer">

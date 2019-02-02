@@ -4,14 +4,11 @@
 	<head>
 		<title>ТОО НТК Sfera-S</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="icon" href="images/ss.png">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="icon" href="{% static 'images\ss.png' %}">
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<style>
 			body{
 				background-color: #444444;
@@ -23,7 +20,7 @@
 		<!-- Шапка сайта -->
 		<nav class="navbar navbar-light justify-content-between">
 			<a class="navbar-brand" style="font-size: 25pt; color: #00AF3F;" href="main">
-				<img src="images/ss.png" width="55" height="55" class="d-inline-block align-top" alt="Navbar">
+				<img src="{% static 'mages\ss.png' %}" width="55" height="55" class="d-inline-block align-top">
 				ТОО НТК Sfera-S
 			</a>
 		    <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: #00AF3F;"></a>
@@ -82,28 +79,40 @@
 	<div class="main">
 		<div class="news">
 			<div id="news-left">
-				<img src="{% static "images/it.png" %}" width="250em;">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\аутсорсинг.html" style="text-decoration: none;"><h5>IT аутсорсинг</h5></a>
+				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\аутсорсинг.html" style="text-decoration: none;">
+					<img src="{% static 'images/outsprcing.jpg' %}" width="250em;">
+					<h5>IT аутсорсинг</h5>
+				</a>
 			</div>
 			<div id="news-left1">
-				<img src="{% static "images/laptop.png" %}" width="250em;">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\ремонт.html" style="text-decoration: none;"><h5>Ремонт ноутбуков</h5></a>
+				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\ремонт.html" style="text-decoration: none;">
+					<img src="{% static "images/laptop.png" %}" width="250em;">
+					<h5>Ремонт ноутбуков</h5>
+				</a>
 			</div>
 			<div id="news-left3">
-				<img src="{% static "images/comp.jpg" %}" width="250em;">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\ремонт-комп.html" style="text-decoration: none;"><h5>Ремонт компьютеров</h5></a>
+				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\ремонт-комп.html" style="text-decoration: none;">
+					<img src="{% static "images/comp.jpg" %}" width="250em;">
+					<h5>Ремонт компьютеров</h5>
+				</a>
 			</div>
 			<div id="news-left2">
-				<img src="{% static "images/backup.png" %}" width="250em;">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\восстановление.html" style="text-decoration: none;"><h5>Восстановление информации</h5></a>
+				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\восстановление.html" style="text-decoration: none;">
+					<img src="{% static "images/backup.png" %}" width="250em;">
+					<h5>Восстановление информации</h5>
+				</a>
 			</div>
 			<div id="news-left4">
-				<img src="{% static "images/clean.jpg" %}" width="250em;">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\чистка.html" style="text-decoration: none;"><h5>Чистка</h5></a>
+				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\чистка.html" style="text-decoration: none;">
+					<img src="{% static "images/clean.jpg" %}" width="250em;">
+					<h5>Чистка</h5>
+				</a>
 			</div>
 			<div id="news-left5">
-				<img src="{% static "images/assembly.jpg" %}" width="250em;">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\сборка.html" style="text-decoration: none;"><h5>Сборка</h5></a>
+				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\сборка.html" style="text-decoration: none;">
+					<img src="{% static "images/assembly.jpg" %}" width="250em;">
+					<h5>Сборка</h5>
+				</a>
 			</div>
 		</div>
 		<div class="o-nas">

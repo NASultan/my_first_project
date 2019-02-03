@@ -3,60 +3,35 @@
 <html>
 	<head>
 		<title>ТОО НТК Sfera-S</title>
-		<meta charset="utf-8">
-
-		<!-- Для обеспечения правильной визуализации и осязание масштабирования для всех устройств -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="{% static 'css/nu.css' %}">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-		<!-- чтобы загрузить наш CSS от Bootscrap -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-		<link rel="icon" href="images/ss.png">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="icon" href="{% static 'images\ss.png' %}">
+		<link rel="stylesheet" href="{% static 'css/nu.css' %}">
 		<style>
 			body{
-				background-color: #444444;
-				/*box-sizing: border-box;*/
+				background-color: #C3E2D9;
 			}
 		</style>
 	</head>
 	<body>
 		<!-- Шапка сайта -->
-		<div class="container">
-			<div class="row">
-				<div class="col-1">
-					<img src="{% static 'images/ss.png' %}" width="45" height="45" alt="Navbar">
-				</div>
-				<div class="col-3">
-					<a class="navbar-brand" href="main">
-						<h1 style="font-size:180%;">ТОО НТК Sfera-S</h1>
-  					</a>
-				</div>
-				<div class="col-4">
-					<div class="contackt">
-						<a href="#"> + 7 (727) 35-73-513</a><br>
-						<a href="#">+ 7 (707) 729-28-26 (WhatsApp)</a><br>
-						<a href="mailto:info@ss.kz">info@ss.kz</a>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="search">
-	  					<form class="form-inline">
-			    			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			    			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
-	  					</form>
-  					</div>
-				</div>
-			</div>
-		</div>
+		<nav class="navbar navbar-light justify-content-between">
+			<a class="navbar-brand" style="font-size: 25pt; color: #00AF3F;" href="main">
+				<img src="{% static 'images\ss.png' %}" width="55" height="55" class="d-inline-block align-top">
+				ТОО НТК Sfera-S
+			</a>
+		    <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: #395498;"></a>
+        	<a href="https://www.instagram.com"><i class="fa fa-instagram" style="color: #C93093;"></i></a>
+		 	<a href="https://www.vk.com"><i class="fa fa-vk" style="color: #4A719E;"></i></a>
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</nav>
 
-		
 		<!-- Меню сайта -->
-		<ul id="menu">
+		<ul id="menu" style="background-color: #00AF3F;">
 			<li><a href="main"><h5>Главная</h5></a></li>
 			<li><a href="services"><h5>Наши услуги</h5></a>
 				<ul class="sub-menu">
@@ -73,116 +48,172 @@
 			<li><a href="contacts"><h5>Контакты</h5></a></li>
 		</ul>
 
-		
-
 	<div class="main">
 
 		<!-- Наши услуги -->
-		<div class="uslug">
-			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-5">
-					<div class="card" style="width: 20rem;">
-						<img src="images/card1.png" alt="card1">
-					</div>
-				</div>
-				<div class="col-6">
-				<p><h4><strong>Первичная консультация</strong></h4></p>
-				<p>Вы можете позвонить нам или оставить заявку. Мы ответим на все ваши вопросы</p>
-				</div>
+		<div class="services">
+			<div class="consultation" >
+				<img src="{% static "images/card1.png" %}" style="width: 15rem; float: left;">
+				<p>
+					<h4><strong>Первичная консультация</strong></h4><br>Вы можете позвонить нам или оставить заявку. Мы ответим на все ваши вопросы
+				</p>
 			</div>
-			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-6">
-					<p><h4><strong>Диагностика проблемы</strong></h4></p>
-					<p>Вы можете позвонить нам или оставить заявку. Мы ответим на все ваши вопросы</p>
-				</div>
-				<div class="col-5">
-					<div class="card" style="width: 20rem;">
-						<img src="images/card2.png" alt="card1">
-					</div>
-				</div>
+			<div class="diagnostics">
+				<img src="{% static "images/card2.png" %}" style="width: 15rem; float: left;">
+				<p>
+					<h4><strong>Диагностика проблемы</strong></h4><br>Вы можете позвонить нам или оставить заявку. Мы ответим на все ваши вопросы
+				</p>
 			</div>
-			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-5">
-					<div class="card" style="width: 20rem;">
-						<img src="images/card3.png" alt="card1">
-					</div>
-				</div>
-				<div class="col-6">
-					<p><h4><strong>Согласование условий</strong></h4></p>
-					<p>Мы обсудим с вами сроки и стоимость работ, поможем вписаться в бюджет или найти альтернативы</p>
-				</div>
+			<div class="conditions">
+				<img src="{% static "images/card3.png" %}" style="width: 15rem; float: left;">
+				<p>
+					<h4><strong>Согласование условий</strong></h4><br>Мы обсудим с вами сроки и стоимость работ, поможем вписаться в бюджет или найти альтернативы
+				</p>
 			</div>
-			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-6">
-					<p><h4><strong>Устранение неполадок</strong></h4></p>
-					<p>Чаще всего техника возвращается владельцу на следующий день. В сложных случаях немного дольше
-					</p>
-				</div>
-				<div class="col-5">
-					<div class="card" style="width: 20rem;">
-						<img src="images/card5.jpeg" alt="card1">
-					</div>
-				</div>
+			<div class="troubleshooting">
+				<img src="{% static "images/card5.png" %}" style="width: 15rem; float: left;">
+				<p>
+					<h4><strong>Устранение неполадок</strong></h4><br>Чаще всего техника возвращается владельцу на следующий день. В сложных случаях немного дольше
+				</p>
 			</div>
-			<div class="row" id="card">
-				<div class="col-1"></div>
-				<div class="col-5">
-					<div class="card" style="width: 20rem;">
-						<img src="images/card5.jpeg" alt="card1">
-					</div>
-				</div>
-				<div class="col-6">
-					<p><h4><strong>Возвращение техники владельцу</strong></h4></p>
-					<p>Вы можете забрать технику в нашем офисе или заказать бесплатную доставку на дом
-					</p>
-				</div>
+			<div class="return">
+				<img src="{% static "images/card5.png" %}" style="width: 15rem; float: left;">
+				<p>
+					<h4><strong>Возвращение техники владельцу</strong></h4><br>Вы можете забрать технику в нашем офисе или заказать бесплатную доставку на дом.</p>
 			</div>
 		</div>
-
-		<!-- Оставьте заявку сейчас и получите 10% скидку -->
-		<div class="oz" align="center">
-			<h2>Оставьте заявку сейчас и получите 10% скидку</h2>
-		</div>
-		<div id="container">
-			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-4" id="three">
-					<label>Имя: <span style="font-weight:bold; color:#FF0000">*</span></label><br>
-					<input name="name" type="text" size="40" class="text"/>
-				</div>
-				<div class="col-4" id="four">
-					<label>Телефон: <span style="font-weight:bold; color:#FF0000">*</span></label><br>
-					<input name="Phone" type="" size="40" class="number"/>
-				</div>
-				<div class="col-2" id="five">
-					<br><button type="button" onclick="alert('Спасибо! Мы обязательно ответим вам.')">Отправить</button>
-				</div>
-			</div>
-		</div>
-
-		
-		<!-- Footer -->
-		<footer class="page-footer font-small mdb-color darken-3 pt-4" id="footer">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="col-md-6">
-						<div class="embed-responsive embed-responsive-16by9 mb-4">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="footer-copyright text-center py-3" id="footer-down" style="color: white;">2019 &copy Все права защищены. 
-			<a href="#"> nursultan_ak@mail.ru</a>
-		</div>
-		</footer>
 
 	</div>
+
+		<!-- Оставьте заявку сейчас и получите 10% скидку -->
+		<div class="oz" align="center" style="background-color: #2DB0CA;">
+			<h2>Оставьте заявку сейчас и получите 10% скидку</h2>
+			<input name="name" type="text" size="32" class="text" placeholder="Имя"/>
+			<input name="Phone" type="" class="number" placeholder="Телефон" />
+			<button type="button" onclick="alert('Спасибо! Мы обязательно ответим вам.')">Отправить</button>
+		</div>
+				
+		<!-- Footer -->
+		<footer class="page-footer font-small unique-color-dark">
+
+			<div style="background-color: #00AF3F;">
+				<div class="container">
+
+					<!-- Grid row-->
+					<div class="row py-4 d-flex align-items-center">
+
+						<!-- Grid column -->
+						<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+							<h6 class="mb-0">Свяжитесь с нами в социальных сетях!</h6>
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-6 col-lg-7 text-center text-md-right">
+
+							<!-- Facebook -->
+							<a href="https://www.facebook.com/" class="fb-ic" style="color: #608DFF;">
+							<i class="fa fa-facebook white-text mr-4"> </i>
+							</a>
+							<!-- Twitter -->
+							<a href="https://www.twitter.com/"  class="tw-ic" style="color: #34B3F7">
+							<i class="fa fa-twitter white-text mr-4"> </i>
+							</a>
+							<!--vk -->
+							<a href="https://www.vk.com/"  class="li-ic" style="color: #4A719E;">
+							<i class="fa fa-vk white-text mr-4"> </i>
+							</a>
+							<!--Instagram-->
+							<a href="https://www.instagram.com/"  class="ins-ic" style="color: #C93093;">
+							<i class="fa fa-instagram white-text"> </i>
+							</a>
+
+						</div>
+						<!-- Grid column -->
+
+					</div>
+					<!-- Grid row-->
+
+				</div>
+			</div>
+
+			<!-- Footer Links -->
+			<div class="container text-center text-md-left mt-5">
+
+				<!-- Grid row -->
+				<div class="row mt-3">
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+						<!-- Content -->
+						<h6 class="text-uppercase font-weight-bold">ТОО НТК Sfera-s</h6>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>Компания «ТОО НТК Sfera-s» - это лучшее решение в сфере ИТ-Аутсорсинга в Алматы! Обслуживаем компьютеры и сети с любовью!</p>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+						<!-- Links -->
+						<h6 class="text-uppercase font-weight-bold">НАШИ ПАРТНЕРЫ</h6>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>Компания А</p>
+						<p>Компания Б</p>
+						<p>Компания В</p>
+						<p>Компания Г</p>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+						<!-- Links -->
+						<h6 class="text-uppercase font-weight-bold">ПОЛЕЗНЫЕ ССЫЛКИ</h6>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>
+						<a href="services">Наши услуги</a>
+						</p>
+						<p>
+						<a href="price">Прайс-лист</a>
+						</p>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+						<!-- Links -->
+						<h6 class="text-uppercase font-weight-bold">Контакты</h6>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>
+						<i class="fa fa-home mr-3"></i> г. Алматы, ул. Досмухамбетова 89</p>
+						<p>
+						<i class="fa fa-envelope mr-3"></i> itm@mail.ru</p>
+						<p>
+						<i class="fa fa-phone mr-3"></i> + 7 777 777 77 77</p>
+
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row -->
+
+			</div>
+			<!-- Footer Links -->
+
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2019 Авторские права:
+				<a href="https://mdbootstrap.com/education/bootstrap/"> nursultan_ak@mail.ru</a>
+			</div>
+			<!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
 
 		<!-- Optional JavaScript -->
     	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

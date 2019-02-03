@@ -3,7 +3,6 @@
 <html>
 	<head>
 		<title>ТОО НТК Sfera-S</title>
-		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -11,8 +10,7 @@
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
 		<style>
 			body{
-				background-color: #444444;
-				/*box-sizing: border-box;*/
+				background-color: #C3E2D9;
 			}
 		</style>
 	</head>
@@ -23,17 +21,17 @@
 				<img src="{% static 'images\ss.png' %}" width="55" height="55" class="d-inline-block align-top">
 				ТОО НТК Sfera-S
 			</a>
-		    <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: #00AF3F;"></a>
-        	<a href="https://www.instagram.com"><i class="fa fa-instagram" style="color: #00AF3F;"></i></a>
-		 	<a href="https://www.vk.com"><i class="fa fa-vk" style="color: #00AF3F;"></i></a>
+		    <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: #395498;"></a>
+        	<a href="https://www.instagram.com"><i class="fa fa-instagram" style="color: #C93093;"></i></a>
+		 	<a href="https://www.vk.com"><i class="fa fa-vk" style="color: #4A719E;"></i></a>
 			<form class="form-inline">
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
 		</nav>
-		
+
 		<!-- Меню сайта -->
-		<ul id="menu">
+		<ul id="menu" style="background-color: #00AF3F;">
 			<li><a href="main"><h5>Главная</h5></a></li>
 			<li><a href="services"><h5>Наши услуги</h5></a>
 				<ul class="sub-menu">
@@ -75,44 +73,31 @@
 		</div>
 		</div>
 
-
-	<div class="main">
+<div class="main">
 		<div class="news">
 			<div id="news-left">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\аутсорсинг.html" style="text-decoration: none;">
-					<img src="{% static 'images/outsprcing.jpg' %}" width="250em;">
-					<h5>IT аутсорсинг</h5>
-				</a>
+				<img src="{% static "images/it.png" %}" width="250em;">
+				<a href="outsourcing" style="text-decoration: none;"><h5>IT аутсорсинг</h5></a>
 			</div>
 			<div id="news-left1">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\ремонт.html" style="text-decoration: none;">
-					<img src="{% static "images/laptop.png" %}" width="250em;">
-					<h5>Ремонт ноутбуков</h5>
-				</a>
+				<img src="{% static "images/laptop.png" %}" width="250em;">
+				<a href="repairs_laptop" style="text-decoration: none;"><h5>Ремонт ноутбуков</h5></a>
 			</div>
 			<div id="news-left3">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\ремонт-комп.html" style="text-decoration: none;">
-					<img src="{% static "images/comp.jpg" %}" width="250em;">
-					<h5>Ремонт компьютеров</h5>
-				</a>
+				<img src="{% static "images/comp.jpg" %}" width="250em;">
+				<a href="repairs" style="text-decoration: none;"><h5>Ремонт компьютеров</h5></a>
 			</div>
 			<div id="news-left2">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\восстановление.html" style="text-decoration: none;">
-					<img src="{% static "images/backup.png" %}" width="250em;">
-					<h5>Восстановление информации</h5>
-				</a>
+				<img src="{% static "images/backup.png" %}" width="250em;">
+				<a href="recovery" style="text-decoration: none;"><h5>Восстановление информации</h5></a>
 			</div>
 			<div id="news-left4">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\чистка.html" style="text-decoration: none;">
-					<img src="{% static "images/clean.jpg" %}" width="250em;">
-					<h5>Чистка</h5>
-				</a>
+				<img src="{% static "images/clean.jpg" %}" width="250em;">
+				<a href="clean" style="text-decoration: none;"><h5>Чистка</h5></a>
 			</div>
 			<div id="news-left5">
-				<a href="C:\Users\NA\YandexDisk\Method\Rest of it\СдТНSs\сборка.html" style="text-decoration: none;">
-					<img src="{% static "images/assembly.jpg" %}" width="250em;">
-					<h5>Сборка</h5>
-				</a>
+				<img src="{% static "images/assembly.jpg" %}" width="250em;">
+				<a href="assembly" style="text-decoration: none;"><h5>Сборка</h5></a>
 			</div>
 		</div>
 		<div class="o-nas">
@@ -137,31 +122,135 @@
 		</div>
 
 		<!-- Оставьте заявку сейчас и получите 10% скидку -->
-		<div class="oz" align="center">
+		<div class="oz" align="center" style="background-color: #2DB0CA;">
 			<h2>Оставьте заявку сейчас и получите 10% скидку</h2>
 			<input name="name" type="text" size="32" class="text" placeholder="Имя"/>
 			<input name="Phone" type="" class="number" placeholder="Телефон" />
 			<button type="button" onclick="alert('Спасибо! Мы обязательно ответим вам.')">Отправить</button>
 		</div>
-		
+				
 		<!-- Footer -->
-		<footer class="page-footer font-small mdb-color darken-3 pt-4" id="footer">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="col-md-6">
-						<div class="embed-responsive embed-responsive-16by9 mb-4">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+		<footer class="page-footer font-small unique-color-dark">
+
+			<div style="background-color: #00AF3F;">
+				<div class="container">
+
+					<!-- Grid row-->
+					<div class="row py-4 d-flex align-items-center">
+
+						<!-- Grid column -->
+						<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+							<h6 class="mb-0">Свяжитесь с нами в социальных сетях!</h6>
 						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-6 col-lg-7 text-center text-md-right">
+
+							<!-- Facebook -->
+							<a href="https://www.facebook.com/" class="fb-ic" style="color: #608DFF;">
+							<i class="fa fa-facebook white-text mr-4"> </i>
+							</a>
+							<!-- Twitter -->
+							<a href="https://www.twitter.com/"  class="tw-ic" style="color: #34B3F7">
+							<i class="fa fa-twitter white-text mr-4"> </i>
+							</a>
+							<!--vk -->
+							<a href="https://www.vk.com/"  class="li-ic" style="color: #4A719E;">
+							<i class="fa fa-vk white-text mr-4"> </i>
+							</a>
+							<!--Instagram-->
+							<a href="https://www.instagram.com/"  class="ins-ic" style="color: #C93093;">
+							<i class="fa fa-instagram white-text"> </i>
+							</a>
+
+						</div>
+						<!-- Grid column -->
+
 					</div>
+					<!-- Grid row-->
+
 				</div>
 			</div>
-			
-			<div class="footer-copyright text-center py-3" id="footer-down" style="color: white;">2019 &copy Все права защищены. 
-			<a href="#"> nursultan_ak@mail.ru</a>
-		</div>
-		</footer>
 
-	</div>
+			<!-- Footer Links -->
+			<div class="container text-center text-md-left mt-5">
+
+				<!-- Grid row -->
+				<div class="row mt-3">
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+						<!-- Content -->
+						<h6 class="text-uppercase font-weight-bold">ТОО НТК Sfera-s</h6>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>Компания «ТОО НТК Sfera-s» - это лучшее решение в сфере ИТ-Аутсорсинга в Алматы! Обслуживаем компьютеры и сети с любовью!</p>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+						<!-- Links -->
+						<h6 class="text-uppercase font-weight-bold">НАШИ ПАРТНЕРЫ</h6>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>Компания А</p>
+						<p>Компания Б</p>
+						<p>Компания В</p>
+						<p>Компания Г</p>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+						<!-- Links -->
+						<h6 class="text-uppercase font-weight-bold">ПОЛЕЗНЫЕ ССЫЛКИ</h6>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>
+						<a href="services">Наши услуги</a>
+						</p>
+						<p>
+						<a href="price">Прайс-лист</a>
+						</p>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+						<!-- Links -->
+						<h6 class="text-uppercase font-weight-bold">Контакты</h6>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>
+						<i class="fa fa-home mr-3"></i> г. Алматы, ул. Досмухамбетова 89</p>
+						<p>
+						<i class="fa fa-envelope mr-3"></i> itm@mail.ru</p>
+						<p>
+						<i class="fa fa-phone mr-3"></i> + 7 777 777 77 77</p>
+
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row -->
+
+			</div>
+			<!-- Footer Links -->
+
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2019 Авторские права:
+				<a href="https://mdbootstrap.com/education/bootstrap/"> nursultan_ak@mail.ru</a>
+			</div>
+			<!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
+
 
 		<!-- Optional JavaScript -->
     	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

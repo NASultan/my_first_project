@@ -1,25 +1,3 @@
-/*Шапка сайта*/
-.container{
-	height: 100px;
-	margin-top: 10px;
-}
-.col-1 {
-	margin: auto;
-}
-.col-1 img{
-	margin-left: 40px;
-}
-.col-3{
-	margin-left: 50px;
-	margin: auto;
-}
-.col-4{
-	margin: auto;
-}
-.contackt a{
-	margin-left: 60px;
-}
-
 /*Меню сайта*/
 * {
   margin: 0;
@@ -68,11 +46,11 @@
   border-bottom: 1px solid #ddd;
 }
 #menu li:hover a {
-  background: #aaa;
+  background: #00FF5E;
   box-shadow: 0 0 5px rgba(0, 0, 0, .3) insert;
 }
 #menu li:hover .sub-menu a {
-  background: #eee;
+  background: #00AF3F;
   color: #666;
   height: 40px;
   line-height: 40px;
@@ -114,36 +92,14 @@
   }
 }
 
-.main{
-  background-color: #1C2A48;
-  margin: auto;
-  /*height: 1500px;*/
-  /*width: 1400px;*/
-}
-.praist table tr td button {
-  width: 200px;
-}
-
-
 /*контакты*/
-.kontact{
-  width: 1200px;
-  margin: auto;
-  /*background-color: white;*/
-  margin-top: 20px;
+.main{
+  max-width: 1200px;
+  width: 100%;
+  background-color: #2EB497;
+  margin: 15px auto;
   color: white;
   height: 515px;
-} 
-.kontact p{
   text-align: center;
   font-size: 12pt;
-}  
-
-/*Footer*/
-#footer{
-  margin-top: 20px;
-  background-color: #1C2A48;
-}
-#footer-down{
-  background-color: #16223A;
 }

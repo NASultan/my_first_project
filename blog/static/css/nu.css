@@ -1,25 +1,3 @@
-/*Шапка сайта*/
-.container{
-	height: 100px;
-	margin-top: 10px;
-}
-.col-1 {
-	margin: auto;
-}
-.col-1 img{
-	margin-left: 40px;
-}
-.col-3{
-	margin-left: 50px;
-	margin: auto;
-}
-.col-4{
-	margin: auto;
-}
-.contackt a{
-	margin-left: 60px;
-}
-
 /*Меню сайта*/
 * {
   margin: 0;
@@ -68,11 +46,11 @@
   border-bottom: 1px solid #ddd;
 }
 #menu li:hover a {
-  background: #aaa;
+  background: #00FF5E;
   box-shadow: 0 0 5px rgba(0, 0, 0, .3) insert;
 }
 #menu li:hover .sub-menu a {
-  background: #eee;
+  background: #00AF3F;
   color: #666;
   height: 40px;
   line-height: 40px;
@@ -115,61 +93,36 @@
 }
 
 .main{
-  background-color: #444444;
-  margin: auto;
-  /*height: 1500px;*/
-  /*width: 1400px;*/
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+.services{
+  text-align: center;
+  padding: 10px;
+}
+.consultation{
+  height: 250px;
+}
+.diagnostics{
+  height: 250px;
+}
+.conditions{
+  height: 250px;
+}
+.troubleshooting{
+  height: 250px;
+}
+.return{
+  height: 250px;
+}
+img {
+  max-width: 100%;
 }
 
 /*Оставьте заявку сейчас и получите 10% скидку*/
 .oz{
-  margin-top: 20px;
-  color: white;
-}
-
-#container{
-  width: 1000px;
-  height: 100px;
-  margin: auto;
-  color: white;
-}
-#container input{
-  border-color: #47C9AF;
-  border-radius: 15px;
-}
-#five button{
-  margin-top: 8px;
-  border-color: #00AF3F;
-  border-radius: 15px;
-  background-color: #00AF3F;
-}
-
-/*news*/
-.uslug{
-  /*width: 1300px;*/
-  margin: auto;
-  background-color: white;
-  margin-top: 20px;
-}
-#card{
-  margin: auto;
-}
-.uslug img{
-  height: 250px;
-  margin-top: 10px;
-}
-.col-6{
-  margin-top: 70px;
-}
-
-/*Footer*/
-#footer{
-  margin-top: 20px;
-  /*height: 350px;*/
-  background-color: #1C2A48;
-}
-#footer-down{
-  margin-top: 205px;
-  height: 80px;
-  background-color: #16223A;
+  padding: 10px;
+  color: #FE0000;
+  margin-bottom: 5px;
 }

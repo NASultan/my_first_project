@@ -46,11 +46,11 @@
   border-bottom: 1px solid #ddd;
 }
 #menu li:hover a {
-  background: #aaa;
+  background: #00FF5E;
   box-shadow: 0 0 5px rgba(0, 0, 0, .3) insert;
 }
 #menu li:hover .sub-menu a {
-  background: #eee;
+  background: #00AF3F;
   color: #666;
   height: 40px;
   line-height: 40px;
@@ -111,11 +111,9 @@ img {
 .news{
   max-width: 100%;
   width: 1000px;
-  /*height: 400px;*/
-  margin: 0 auto;
+  margin: 10px auto;
   background-color: white;
   padding: 15px;
-  /*margin-top: 20px;*/
 }
 #news-left{
   width: 320px;
@@ -163,7 +161,7 @@ img {
 .o-nas{
   max-width: 100%;
   width: 1000px;
-  margin: 0 auto;
+  margin: 10px auto;
   background-color: white;
   margin-top: 20px;
   padding: 20px;
@@ -171,18 +169,7 @@ img {
 
 /*Оставьте заявку сейчас и получите 10% скидку*/
 .oz{
-  padding: 20px;
-  color: white;
-}
-
-/*Footer*/
-#footer{
-  margin-top: 20px;
-  /*height: 350px;*/
-  background-color: #1C2A48;
-}
-#footer-down{
-  margin-top: 205px;
-  height: 80px;
-  background-color: #16223A;
+  padding: 10px;
+  color: #FE0000;
+  margin-bottom: 5px;
 }

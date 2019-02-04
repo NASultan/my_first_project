@@ -12,18 +12,18 @@ def news(request):
 def clean(request):
  			return render(request, 'blog/чистка.html', {})
 def services(request):
- 			return render(request, 'blog/аутсорсинг.html', {})
-def outsourcing(request):
- 			return render(request, 'blog/восстановление.html', {})
-def repairs_laptop(request):
- 			return render(request, 'blog/контакты.html', {})
-def repairs(request):
  			return render(request, 'blog/наши услуги.html', {})
-def recovery(request):
+def outsourcing(request):
+ 			return render(request, 'blog/аутсорсинг.html', {})
+def repairs_laptop(request):
  			return render(request, 'blog/ремонт.html', {})
-def assembly(request):
+def repairs(request):
  			return render(request, 'blog/ремонт-комп.html', {})
+def recovery(request):
+ 			return render(request, 'blog/восстановление.html', {})
+def assembly(request):
+ 			return render(request, 'blog/сборка.html', {})
 def price(request):
- 			return render(request, 'blog/сборка.html', {})
+ 			return render(request, 'blog/прайст-лист.html', {})
 def contacts(request):
- 			return render(request, 'blog/сборка.html', {})
+ 			return render(request, 'blog/контакты.html', {})

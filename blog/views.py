@@ -16,9 +16,9 @@ def services(request):
 def outsourcing(request):
  			return render(request, 'blog/аутсорсинг.html', {})
 def repairs_laptop(request):
- 			return render(request, 'blog/ремонт.html', {})
-def repairs(request):
  			return render(request, 'blog/ремонт-комп.html', {})
+def repairs(request):
+ 			return render(request, 'blog/ремонт.html', {})
 def recovery(request):
  			return render(request, 'blog/восстановление.html', {})
 def assembly(request):
